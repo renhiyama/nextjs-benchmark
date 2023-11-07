@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Install dependencies",
+    "command": "cd project && npm install --force",
+    "extraArgs": {
+      "warmup": 1,
+      "runs": 3,
+      "prepare": "rm -rf project && giget gh:renhiyama/next-project project --prefer-offline",
+      "cleanup": "rm -rf project"
+    }
+  },
+  {
+    "name": "Nextjs - Node [DEV]",
+    "command": "cd project && node benchmarker.js",
+    "extraArgs": {
+      "warmup": 1,
+      "runs": 3,
+      "prepare": "rm -rf project && giget gh:renhiyama/next-project project --prefer-offline && cd project && npm install && cp ../benchmarker.js .",
+      "cleanup": "rm -rf project"
+    }
+  },
+  {
+    "name": "Nextjs - Node [PROD]",
+    "command": "cd project && npm run build",
+    "extraArgs": {
+      "warmup": 1,
+      "runs": 3,
+      "prepare": "rm -rf project && giget gh:renhiyama/next-project project --prefer-offline && cd project && npm install",
+      "cleanup": "rm -rf project"
+    }
+  }
+]
