@@ -11,11 +11,11 @@
   },
   {
     "name": "Nextjs - Node [DEV]",
-    "command": "cd project && node benchmarker.js",
+    "command": "cd project && node benchmarker.mjs",
     "extraArgs": {
       "warmup": 1,
       "runs": 3,
-      "prepare": "rm -rf project && giget gh:renhiyama/next-project project --prefer-offline && cd project && npm install && cp ../benchmarker.js .",
+      "prepare": "rm -rf project && giget gh:renhiyama/next-project project --prefer-offline && cd project && npm install && cp ../benchmarker.mjs .",
       "cleanup": "rm -rf project"
     }
   },
