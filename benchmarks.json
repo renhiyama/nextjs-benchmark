@@ -1,6 +1,63 @@
 [
   {
     "hash": "b6a3cb976d29205e10954a8e64ae417d07c3173e",
+    "createdAt": "2024-01-24T00:51:59.049Z",
+    "results": [
+      {
+        "name": "Install dependencies",
+        "count": 3,
+        "command": "cd project && npm install --force",
+        "mean": 5.126380393000001,
+        "stddev": 0.0401184389399876,
+        "median": 5.121055484,
+        "user": 5.5365415533333335,
+        "system": 2.0809751066666666,
+        "min": 5.08919033,
+        "max": 5.168895365,
+        "exit_codes": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Nextjs - Node [DEV]",
+        "count": 3,
+        "command": "cd project && node benchmarker.mjs",
+        "mean": 4.339611179626666,
+        "stddev": 0.13623344832041212,
+        "median": 4.26250300096,
+        "user": 0.39838256,
+        "system": 0.08393878666666665,
+        "min": 4.259420588959999,
+        "max": 4.49690994896,
+        "exit_codes": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Nextjs - Node [PROD]",
+        "count": 3,
+        "command": "cd project && npm run build",
+        "mean": 10.522347729006666,
+        "stddev": 0.04291564502735164,
+        "median": 10.53228162834,
+        "user": 16.12545604,
+        "system": 1.884443993333333,
+        "min": 10.47533626934,
+        "max": 10.559425289339998,
+        "exit_codes": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "hash": "b6a3cb976d29205e10954a8e64ae417d07c3173e",
     "createdAt": "2024-01-23T00:52:11.741Z",
     "results": [
       {
